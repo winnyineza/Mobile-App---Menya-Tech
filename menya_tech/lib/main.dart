@@ -3,9 +3,9 @@ import 'interactive_lessons.dart';
 import 'coding_challenges.dart';
 import 'community_forum.dart';
 import 'career_guidance.dart';
-// import 'accessibility_settings.dart';
+import 'accessibility_settings.dart';
 // import 'localization.dart';
-// import 'feedback_form.dart';
+import 'feedback_form.dart';
 
 void main() {
   runApp(MenyaApp());
@@ -59,18 +59,18 @@ class MenyaHomePage extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute(builder: (context) => CareerGuidance()));
             },
           ),
-          // ListTile(
-          //   title: Text('Accessibility Settings'),
-          //   onTap: () {
-          //     Navigator.push(context, MaterialPageRoute(builder: (context) => AccessibilitySettings()));
-          //   },
-          // ),
-          // ListTile(
-          //   title: Text('Feedback Form'),
-          //   onTap: () {
-          //     Navigator.push(context, MaterialPageRoute(builder: (context) => FeedbackForm()));
-          //   },
-          // ),
+          ListTile(
+            title: Text('Accessibility Settings'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => AccessibilitySettings()));
+            },
+          ),
+          ListTile(
+            title: Text('Feedback Form'),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => FeedbackForm()));
+            },
+          ),
         ],
       ),
     );
